@@ -7,6 +7,7 @@ class Car(models.Model):
     image = models.ImageField(upload_to='media/images/')
     land = models.CharField(max_length=200)
     description = models.TextField()
+    email = models.EmailField()
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
